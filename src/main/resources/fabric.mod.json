@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "advancementmanager",
+	"version": "${version}",
+	"name": "Advancement Manager",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://forgedinteractive.net",
+		"sources": "https://github.com/jstaed/Fabric-Advancement-Manager-1.21.4"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/advancementmanager/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.forgedinteractive.advancementmanager.AdvancementManager"
+		],
+		"fabric-datagen": [
+			"net.forgedinteractive.advancementmanager.AdvancementManagerDataGenerator"
+		]
+	},
+	"mixins": [
+		"advancementmanager.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
