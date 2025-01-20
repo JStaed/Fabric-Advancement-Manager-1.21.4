@@ -3,7 +3,7 @@
 	"id": "advancementmanager",
 	"version": "${version}",
 	"name": "Advancement Manager",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "Create custom advancements and/or override vanilla advancements",
 	"authors": [
 		"Me!"
 	],
