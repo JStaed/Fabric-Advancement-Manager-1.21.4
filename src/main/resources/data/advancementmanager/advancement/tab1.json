@@ -1,0 +1,27 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:dirt",
+      "count": 1
+    },
+    "title": "Tab 1",
+    "description": "This is a root advancement. The starting point for each advancement tab.",
+    "background": "minecraft:textures/block/dirt.png",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "main": {
+      "trigger": "minecraft:tick",
+      "conditions": {}
+    }
+  },
+  "requirements": [
+    [
+      "main"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

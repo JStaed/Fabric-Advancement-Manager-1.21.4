@@ -15,10 +15,6 @@ public class AdvancementManager implements ModInitializer {
 	public void onInitialize() {
 		ModConfigs.registerConfigs();
 
-		if (ModConfigs.ADVANCEMENT_OVERRIDE_ALL == 1) {
-			LOGGER.info("ADVANCEMENTS OVERRIDDEN!!!!");
-		}
-
 		LOGGER.info("Successfully Initialized " + AdvancementManager.MOD_ID);
 	}
 }
