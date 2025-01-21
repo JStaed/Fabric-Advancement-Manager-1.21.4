@@ -16,7 +16,7 @@ public class ModConfigs {
         configs = new ModConfigProvider();
         createConfigs();
 
-        CONFIG = SimpleConfig.of(AdvancementManager.MOD_ID + "config").provider(configs).request();
+        CONFIG = SimpleConfig.of(AdvancementManager.MOD_ID).provider(configs).request();
 
         assignConfigs();
     }
