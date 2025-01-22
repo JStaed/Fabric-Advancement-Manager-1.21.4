@@ -19,8 +19,8 @@ public class AdvancementManager implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		ModConfigs.registerConfigs();
 		AdvancementLoader.loadAdvancements();
+		ModConfigs.registerConfigs();
 		ServerPlayConnectionEvents.JOIN.register(new DatapackStarter());
 		ServerLifecycleEvents.SERVER_STOPPED.register(new DatapackStopper());
 		LOGGER.info("Successfully Initialized " + AdvancementManager.MOD_ID);
