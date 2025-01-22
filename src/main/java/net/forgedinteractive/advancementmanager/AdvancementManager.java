@@ -7,6 +7,7 @@ import net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents;
 import net.fabricmc.fabric.api.networking.v1.ServerPlayConnectionEvents;
 import net.forgedinteractive.advancementmanager.config.ModConfigs;
 import net.forgedinteractive.advancementmanager.eventhandlers.DatapackStarter;
+import net.forgedinteractive.advancementmanager.eventhandlers.DatapackStopper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -21,6 +22,7 @@ public class AdvancementManager implements ModInitializer {
 		ModConfigs.registerConfigs();
 		AdvancementLoader.loadAdvancements();
 		ServerPlayConnectionEvents.JOIN.register(new DatapackStarter());
+		ServerLifecycleEvents.SERVER_STOPPED.register(new DatapackStopper());
 		LOGGER.info("Successfully Initialized " + AdvancementManager.MOD_ID);
 	}
 
